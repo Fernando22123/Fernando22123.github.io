@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doumento</title>
+  <style>
+    td {
+      border: solid 1px;
+    }
+  </style>
+</head>
+<body>
+  <h1>USANDO TABLAS</h1>
+  <table>
+    <tr>
+      <td>Fila1 columna1</td>
+      <td>Fila1 columna2</td>
+    </tr>
+    <tr>
+      <td>Fila2 columna1</td>
+      <td>Fila2 columna2</td>
+    </tr>
+  </table>
+  <table>
+  <tr>
+    <td>Fila1 columna1</td>
+    <td colspan="3">Fila1 columna2, 3 y 4</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Fila2 y 3 columna 1</td>
+    <td>Fila2 columna2</td>
+    <td>Fila2 columna3</td>
+    <td>Fila2 columna4</td>
+  </tr>
+  <tr>
+    <td>Fila3 columna2</td>
+    <td>Fila3 columna3</td>
+    <td>Fila4 colimna4</td>
+  </tr>
+  <form>
+    <!-- TABLA 2 -->
+<table>
+  <tr><th>Día</th><th>Horario</th></tr>
+  <tr><td>Lunes a Viernes</td><td>8:00 - 17:00</td></tr>
+  <tr><td>Sábado</td><td>9:00 - 13:00</td></tr>
+  <tr><td>Domingo</td><td>Cerrado</td></tr>
+</table><br>
+
+<!-- TABLA 3 -->
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Cargo</th>
+    <th>Email</th>
+  </tr>
+  <tr><td>Ana Torres</td><td>Soporte Técnico</td><td>ana@empresa.com</td></tr>
+  <tr><td>Juan Pérez</td><td>Ventas</td><td>juan@empresa.com</td></tr>
+</table><br>
+<!-- TABLA 4 -->
+    <table>
+   <tr><th>Servicio</th><th>Precio</th></tr>
+    <tr><td>Instalación de software</td><td>S/.25</td></tr>
+    <tr><td>Mantenimiento de PC</td><td>S/.40</td></tr>
+   <tr><td>Pasta térmica</td><td>S/.15</td></tr>
+   <tr><td>Accesorios de PC</td><td>S/.400</td></tr>
+    </table>
+  <hr>
+  <h1>TRABAJANDO CON FORMULARIOS</h1>
+  <h2>input type=</h2>
+  <form action="clase09.html">
+  <label for="">Nombre:</label>
+  <input type="text" required><br>
+  <label for="">Correo:</label>
+  <input type="email" required placeholder="tucorreo@dominio"><br>
+  <label for="">Teléfono:</label>
+  <input type="tel" placeholder="+51 987654321"><br>
+  <label for="">Contraseña:</label>
+  <input type="password" name="" id=""><br>
+  <label for="">Buscar</label>
+  <input type="search" name="" id=""><br>
+  <label for="">Edad</label>
+  <input type="number" name="" id=""><br>
+  <!--Label despues-->
+  <input type="radio" name="" id="">
+  <label for="">Enviar correos promosionales</label>
+  <input type="checkbox" name="" id="">
+  <label for="">Aceptar terminos y condiciones</label><br>
+<!--Botones-->
+  <br><input type="submit" value="Enviar">
+  <input type="reset" value="Limpiar">
+  <input type="button" value="siguiente">
+  <br>
+<!--Otros Elementos-->
+<label for="">Selecciona tu país:</label>
+<select name="" id="">
+  <option value="ARG">Argentina</option>
+  <option value="PER">Perú</option>
+  <option value="BRL">Brasil</option>
+  <option value="USA">Estados Unidos</option>
+</select>
+<br>
+<label for="com">Agrega un comentario:</label>
+<textarea name="com" id="" cols="20" rows="10"></textarea>
+</form>
+<!--Texto y entidades-->
+<h3>MI tutorial</h3>
+<p> Aprende como usar &lt;hr&gt; como un elemento más  </p>
+<br><br>
+</body>
+</html>
