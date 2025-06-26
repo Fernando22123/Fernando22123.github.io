@@ -1,5 +1,4 @@
 body {
-  background-color: #f0f8ff;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -41,10 +40,11 @@ nav a {
 }
 
 .banner {
-  width: 65%;         /* Más pequeño que el 100% */
-  height: auto;       /* Conserva proporción original */
   display: block;
-  margin: 14px auto;  /* Centrado horizontalmente con espacio arriba y abajo */
+  margin: 20px auto 40px auto;
+  max-width: 90%;
+  height: 500px;
+  object-fit: cover;
   border: none;
 }
 
@@ -55,6 +55,10 @@ main {
   text-align: left;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
 h2 {
   color: #003366;
   font-size: 28px;
@@ -62,13 +66,9 @@ h2 {
 }
 
 ul {
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 1.4;
   padding-left: 40px;
-}
-
-p {
-  font-size: 20px;
-  margin-left: 10px;
 }
 
 .empresa {
@@ -76,24 +76,10 @@ p {
 }
 
 .empresa img {
-  width: 700px;
-  max-height: 400px;
+  width: 650px;
+  max-height: 360px;
   object-fit: contain;
-  margin-bottom: 20px;
-}
-
-#objetivos {
-  background-color: #e6f0ff;
-  padding: 20px;
-}
-
-a {
-  color: #0056b3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  margin-bottom: 14px;
 }
 
 .footer {
@@ -101,4 +87,72 @@ a:hover {
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.frase {
+  font-style: italic;
+  font-size: 20px;
+  color: #003366;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#objetivos img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+/* ✅ Estilos añadidos para Tipos de Prótesis */
+.tipos {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.tipos h3 {
+  color: #003366;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.tipos p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.tipos {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.tipos h2 {
+  font-size: 26px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.tipo {
+  margin-bottom: 40px;
+}
+
+.tipo h3 {
+  color: #003366;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.tipo p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.tipo img {
+  width: 220px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
