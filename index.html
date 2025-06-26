@@ -2,42 +2,182 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>clase11</title>
+  <title>PRÓTESIS</title>
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #333;
-      color: #fff0f0;
-      background-color: #15f;
-      background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/12/15/Hexagon-technology-background-Graphics-7301644-1-580x387.jpg");
-      background-repeat: repeat-x;
-      background-size: 80%;
-      background-position: center;
-      margin: 10%;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
 
-    h1 {
-      color: #ff5;
-      font-weight: normal;
+    header {
+      background-color: #0056b3;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      height: 60px;
+    }
+
+    .titulo {
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0 20px;
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto 0 auto; /* Margen superior añadido */
+      object-fit: contain;
+      border: none;
+      max-height: 350px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      color: #003366;
+      font-size: 28px;
+      margin-left: 10px;
+    }
+
+    ul {
+      font-size: 22px;
+      line-height: 1.4;
+      padding-left: 40px;
+    }
+
+    .empresa {
+      margin-bottom: 40px;
+    }
+
+    .empresa img {
+      width: 700px;
+      max-height: 400px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    .objetivos {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .objetivos img {
+      width: 110px;
+      border-radius: 10px;
+    }
+
+    .footer {
+      background-color: #0056b3;
+      color: white;
+      padding: 20px;
       text-align: center;
-      text-decoration: underline;
     }
 
     p {
-      font-size: 14px;
-      line-height: 1.6;
-      color: rgb(100, 200, 255);
-      text-align: justify;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+    .frase {
+      font-style: italic;
+      font-size: 20px;
+      color: #003366;
+      margin-top: 20px;
+      margin-left: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>TRABAJANDO CON CSS</h1>
-  <h2>EL CÍRCULO CROMÁTICO O RUEDA DE COLORES</h2>
-  <p>
-    CSS (siglas en inglés de Cascading Style Sheets; en español: «hojas de estilo en cascada») es un lenguaje informático especializado en definir y cohesionar la presentación de un documento escrito en un lenguaje de marcado como HTML o XML.
-  </p>
+
+  <header>
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1 class="titulo">PRÓTESIS</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Contacto</a>
+      <span>📞 974665124</span>
+    </nav>
+  </header>
+
+  <!-- Banner con margen superior -->
+  <img src="banner.png" alt="Imagen principal" class="banner">
+
+  <main>
+    <section>
+      <p><strong>Una <a href="https://es.wikipedia.org/wiki/Prótesis">prótesis</a></strong> es más que una parte <a href="https://es.wikipedia.org/wiki/Artificial">artificial</a> del cuerpo. Es una mezcla de ciencia, tecnología y esperanza, que ayuda a miles de personas a recuperar su independencia, su confianza y sus sueños.</p>
+    </section>
+
+    <section class="objetivos">
+      <div>
+        <h2>Objetivos de las prótesis</h2>
+        <ul>
+          <li><strong>Reemplazar una parte del cuerpo que falta:</strong> sustituir una extremidad u órgano perdido por accidente, enfermedad o que no se desarrolló.</li>
+          <li><strong>Recuperar funciones físicas:</strong> permiten caminar, correr, agarrar objetos, escribir, comer, etc.</li>
+          <li><strong>Mejorar la calidad de vida:</strong> dan independencia, confianza y bienestar emocional y social.</li>
+        </ul>
+        <p class="frase">"Cada prótesis no solo reemplaza lo que se perdió, sino que también representa lo que aún se puede lograr."</p>
+      </div>
+      <img src="objetivos.png" alt="Persona con prótesis caminando">
+    </section>
+
+    <section>
+      <h2>Mejores empresas</h2>
+
+      <div class="empresa">
+        <img src="depuy.png" alt="DePuy Synthes">
+        <p><strong><a href="https://www.jnjmedtech.com/es-419/companies/depuy-synthes">DePuy Synthes</a></strong><br>DePuy Synthes es una empresa líder en ortopedia y parte de Johnson & Johnson MedTech. Se dedica al diseño, fabricación y distribución de dispositivos médicos, especialmente en el ámbito de la reconstrucción articular, traumatología, cirugía craneomaxilofacial, cirugía de columna y medicina deportiva.</p>
+      </div>
+
+      <div class="empresa">
+        <img src="biomet.png" alt="Biomet">
+        <p><strong><a href="https://www.zimmerbiomet.com/en">Biomet</a></strong><br>Biomet es una empresa que se dedica a la fabricación de dispositivos médicos, especialmente en el área de ortopedia reconstructiva, neurocirugía y cirugía craneomaxilofacial, además de suministros para quirófanos.</p>
+      </div>
+
+      <div class="empresa">
+        <img src="stryker.png" alt="Stryker">
+        <p><strong><a href="https://www.stryker.com/es/es/index.html">Stryker</a></strong><br>Stryker es una empresa multinacional estadounidense de tecnología médica, líder en la industria con presencia en más de 100 países. Se dedica a desarrollar y producir una amplia gama de productos y servicios innovadores en áreas como ortopedia, cirugía, neurotecnología y manejo de pacientes.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 Prótesis Perú | Informate con nosotros 
+  </footer>
+
 </body>
 </html>
