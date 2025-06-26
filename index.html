@@ -3,124 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>PRÓTESIS</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    header {
-      background-color: #0056b3;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      height: 60px;
-    }
-
-    .titulo {
-      font-size: 32px;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin: 0 20px;
-      flex-grow: 1;
-      text-align: left;
-    }
-
-    nav {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .banner {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 10px auto 0 auto; /* Margen superior añadido */
-      object-fit: contain;
-      border: none;
-      max-height: 350px;
-    }
-
-    main {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-      text-align: left;
-    }
-
-    section {
-      margin-bottom: 50px;
-    }
-
-    h2 {
-      color: #003366;
-      font-size: 28px;
-      margin-left: 10px;
-    }
-
-    ul {
-      font-size: 22px;
-      line-height: 1.4;
-      padding-left: 40px;
-    }
-
-    .empresa {
-      margin-bottom: 40px;
-    }
-
-    .empresa img {
-      width: 700px;
-      max-height: 400px;
-      object-fit: contain;
-      margin-bottom: 20px;
-    }
-
-    .objetivos {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .objetivos img {
-      width: 110px;
-      border-radius: 10px;
-    }
-
-    .footer {
-      background-color: #0056b3;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    p {
-      font-size: 20px;
-      margin-left: 10px;
-    }
-
-    .frase {
-      font-style: italic;
-      font-size: 20px;
-      color: #003366;
-      margin-top: 20px;
-      margin-left: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
@@ -134,25 +17,20 @@
     </nav>
   </header>
 
-  <!-- Banner con margen superior -->
   <img src="banner.png" alt="Imagen principal" class="banner">
 
   <main>
     <section>
-      <p><strong>Una <a href="https://es.wikipedia.org/wiki/Prótesis">prótesis</a></strong> es más que una parte <a href="https://es.wikipedia.org/wiki/Artificial">artificial</a> del cuerpo. Es una mezcla de ciencia, tecnología y esperanza, que ayuda a miles de personas a recuperar su independencia, su confianza y sus sueños.</p>
+      <p><strong><a href="https://es.wikipedia.org/wiki/Prótesis">Una prótesis</a></strong> es más que una parte artificial del cuerpo. Es una mezcla de ciencia, tecnología y esperanza, que ayuda a miles de personas a recuperar su independencia, su confianza y sus sueños.Estas pueden ser externas (como prótesis de miembros o dentales removibles) o internas (como implantes dentales o prótesis mamarias). Su función principal es restaurar la función, la apariencia y la calidad de vida de la persona.</p>
     </section>
 
-    <section class="objetivos">
-      <div>
-        <h2>Objetivos de las prótesis</h2>
-        <ul>
-          <li><strong>Reemplazar una parte del cuerpo que falta:</strong> sustituir una extremidad u órgano perdido por accidente, enfermedad o que no se desarrolló.</li>
-          <li><strong>Recuperar funciones físicas:</strong> permiten caminar, correr, agarrar objetos, escribir, comer, etc.</li>
-          <li><strong>Mejorar la calidad de vida:</strong> dan independencia, confianza y bienestar emocional y social.</li>
-        </ul>
-        <p class="frase">"Cada prótesis no solo reemplaza lo que se perdió, sino que también representa lo que aún se puede lograr."</p>
-      </div>
-      <img src="objetivos.png" alt="Persona con prótesis caminando">
+    <section id="objetivos">
+      <h2>Objetivos de las prótesis</h2>
+      <ul>
+        <li><strong>Reemplazar una parte del cuerpo que falta:</strong> sustituir una extremidad u órgano perdido por accidente, enfermedad o que no se desarrolló.</li>
+        <li><strong>Recuperar funciones físicas:</strong> permiten caminar, correr, agarrar objetos, escribir, comer, etc.</li>
+        <li><strong>Mejorar la calidad de vida:</strong> dan independencia, confianza y bienestar emocional y social.</li>
+      </ul>
     </section>
 
     <section>
@@ -160,23 +38,27 @@
 
       <div class="empresa">
         <img src="depuy.png" alt="DePuy Synthes">
-        <p><strong><a href="https://www.jnjmedtech.com/es-419/companies/depuy-synthes">DePuy Synthes</a></strong><br>DePuy Synthes es una empresa líder en ortopedia y parte de Johnson & Johnson MedTech. Se dedica al diseño, fabricación y distribución de dispositivos médicos, especialmente en el ámbito de la reconstrucción articular, traumatología, cirugía craneomaxilofacial, cirugía de columna y medicina deportiva.</p>
+        <p><strong><a href="https://www.jnjmedtech.com/es-419/depuy-synthes">DePuy Synthes</a></strong><br>
+        Empresa líder en ortopedia y parte de Johnson & Johnson MedTech. Se dedica al diseño y distribución de dispositivos médicos para reconstrucción articular, cirugía de columna, etc.</p>
       </div>
 
       <div class="empresa">
         <img src="biomet.png" alt="Biomet">
-        <p><strong><a href="https://www.zimmerbiomet.com/en">Biomet</a></strong><br>Biomet es una empresa que se dedica a la fabricación de dispositivos médicos, especialmente en el área de ortopedia reconstructiva, neurocirugía y cirugía craneomaxilofacial, además de suministros para quirófanos.</p>
+        <p><strong><a href="https://www.zimmerbiomet.com/">Biomet</a></strong><br>
+        Fabricación de dispositivos médicos en ortopedia, neurocirugía y cirugía craneomaxilofacial. También produce suministros quirúrgicos.</p>
       </div>
 
       <div class="empresa">
         <img src="stryker.png" alt="Stryker">
-        <p><strong><a href="https://www.stryker.com/es/es/index.html">Stryker</a></strong><br>Stryker es una empresa multinacional estadounidense de tecnología médica, líder en la industria con presencia en más de 100 países. Se dedica a desarrollar y producir una amplia gama de productos y servicios innovadores en áreas como ortopedia, cirugía, neurotecnología y manejo de pacientes.</p>
+        <p><strong><a href="https://www.stryker.com/">Stryker</a></strong><br>
+        Empresa de tecnología médica con presencia global, desarrollando productos en ortopedia, neurotecnología y cirugía.</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     &copy; 2025 Prótesis Perú | Informate con nosotros 
+    <p>&copy; Para mas informacion contactanos al 974665124</p>
   </footer>
 
 </body>
